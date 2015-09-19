@@ -1,0 +1,37 @@
+<h1>Demo#hello</h1>
+<p>Hello world!</p>
+
+
+<!--this code will show 1+1 on the webite, with no % it will not -->
+<%= 1+1 %> 
+<br />
+
+<!--ruby code can be run liek this-->
+<% target = "world" %>
+<%= "Hello #{target}" %>
+
+<!--Puts will display to the console, not to the web-site-->
+<!--
+<% 3.times do
+	puts "xxx"
+end %>
+-->
+
+<!-- this is how you would write it in ERb-->
+<% @array.each do |n| %>
+  <%= n %><br />
+<% end %>
+
+<a href="/demo/index">Index Page 1</a><br />
+<%= link_to('Index page 2', {:action => 'index'}) %>
+
+<br />
+
+ID: <%= params[:id] %><br />
+ID: <%= @id %><br />
+Next page: <%= @page + 1%><br />
+
+#This shwos all our inspect parameters
+<hr />
+<%= params.inspect %>
+
